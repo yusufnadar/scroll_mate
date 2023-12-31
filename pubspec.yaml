@@ -1,6 +1,6 @@
 name: scroll_mate
 description: Multiple scroll controller work synchronization and define how many line to display
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/yusufnadar/scroll_mate
 
 environment:

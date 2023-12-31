@@ -125,7 +125,9 @@ class _ScrollMateListState<T> extends State<ScrollMateList<T>> {
     required bool lastLine,
   }) {
     return Container(
-      margin: EdgeInsets.only(bottom: lastLine == false ? scrollMateModel.mainAxisSpacing : 0),
+      margin: EdgeInsets.only(
+        bottom: lastLine == false ? scrollMateModel.mainAxisSpacing : 0,
+      ),
       child: SingleChildScrollView(
         padding: scrollMateModel.scrollPadding,
 

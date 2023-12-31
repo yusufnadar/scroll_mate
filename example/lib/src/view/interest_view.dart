@@ -30,16 +30,19 @@ class _InterestViewState extends State<InterestView> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              ScrollMateList<dynamic>(
+              ScrollMateList<String>(
                 scrollMateModel: ScrollMateModel(
                   lineCount: 2,
                   items: Interests.list,
                   title: buildInterestTitle(),
-                  builder: (dynamic title, int index) {
+                  builder: (String title, int index) {
                     return ScrollMateItem(
                       rightMargin: 20,
                       leftMargin: 20,
-                      item: ScrollMateChip(title: title.toString(), index: index),
+                      item: ScrollMateChip(
+                        title: title,
+                        index: index,
+                      ),
                     );
                   },
                 ),
